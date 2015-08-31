@@ -22,6 +22,7 @@
 
 // program includes
 #include "uart.h"
+#include "osc_cal.h"
 
 volatile unsigned int count;
 volatile unsigned char data;
@@ -87,6 +88,7 @@ PORTB  |= (0<<PB4)|(1<<PB7);
 PORTG  |= (0<<PG3)|(1<<PG4);
 com_send(data);
 _delay_ms(500);
+calibrate_rco();
 }
 
 }

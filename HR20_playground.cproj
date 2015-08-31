@@ -119,6 +119,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="adc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="adc.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="lcd.c">
       <SubType>compile</SubType>
     </Compile>
@@ -129,6 +135,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="main.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="osc_cal.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="osc_cal.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="uart.c">
